@@ -1,10 +1,21 @@
-class main {
-  public static void main(String[] args) {
-  
-    int n = 5;
-    // for loop  
-    for (int i = 1; i <= n; ++i) {
-      system.out.println(i);
-    }
+//Program to Display Pyramid 
+ import java.util.Scanner; //Program uses Scanner class 
+  public class pyramid 
+ { 
+     public static void main(String [] args) 
+     { 
+         int n,i,j; 
+         //create scanner object to obtain input from keyboard 
+         Scanner input =new Scanner(System.in); 
+         System.out.print("Enter How Many Lines :"); // input 
+         n =input.nextInt(); //Read number 
+         for(i=1 ; i<=n ; i++ ) 
+             { 
+                for( j=1; j<=i ; j++) 
+                    { 
+                        System.out.print(i + " "); 
+                    } 
+                        System.out.print("\n"); 
+             } 
+       } 
   }
-}
